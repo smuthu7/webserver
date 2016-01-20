@@ -16,7 +16,7 @@ var middleware = {
 app.use(middleware.logger);
 
 app.get('/about',middleware.requireAuthentication, function(req,res){
-	res.send('This is about Muthu');
+	res.send('This is about Muthu!');
 });
 app.use(Express.static(__dirname+'/public'));
 app.listen(PORT, function(){
